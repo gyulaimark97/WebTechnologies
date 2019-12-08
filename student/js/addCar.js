@@ -20,12 +20,19 @@ $(function () {
 });
 
 function ManSelect() {
-    $.getJSON('manufacturers', function (data) {
-        var select = $('#manSelect');
-        $.each(data, function (key, value) {
-            $(select).append('<option value='+value.name+'>'+value.name+'</option>');
-        })
-    })
+    $.get('manufacturers', function (data) {
+        var carsselect = $("#manSelect");
+        for(var i = 0; i < data.length; i++){
+            var manName = document.createElement('option');
+
+            manName.innerHTML = data[i].name;
+            manName.setAttribute("value", data[i].name);
+
+            carsselect.append(manName);
+        }
+    });
+
+
 }
 
 
@@ -59,6 +66,7 @@ function createCarsRow(car){
 
     return tr;
 }
+
 
 
 

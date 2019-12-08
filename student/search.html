@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 
 
-
 <html>
-<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
 <script type="text/javascript" src="js/addCar.js"> </script>
-<script type="text/javascript" src="js/search.js"> </script>
-<div class="bekezdes">
 
+
+<div class="bekezdes">
+    <form id="search" method="get" action="/manufacturer" name="search" >
         <table>
             <tr>
                 <td colspan="2">
                     Keresés:
-                    <form id="search" method="get" action="/manufacturer" name="search">
-                        <select id="manSelect"/>
-                        <input id="searchSubmit" type="submit" value="Keresés"/>
-                    </form>
+                    <select id="manSelect"></select>
+                    <input id="searchSubmit" type="submit" value="Keresés" />
                 </td>
             </tr>
         </table>
-
-
+    </form>
 
     <table id="list" >
         <thead>
@@ -36,4 +32,5 @@
     </table>
 
 </div>
+<script type="text/javascript" src="js/search.js"> </script>
 </html>
