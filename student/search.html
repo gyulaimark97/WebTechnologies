@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+
+
+<html>
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="js/addCar.js"> </script>
+<script type="text/javascript" src="js/search.js"> </script>
+<div class="bekezdes">
+
+        <table>
+            <tr>
+                <td colspan="2">
+                    Keresés:
+                    <form id="search" method="get" action="/manufacturer" name="search">
+                        <select id="manSelect"/>
+                        <input id="searchSubmit" type="submit" value="Keresés"/>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+
+
+    <table id="list" >
+        <thead>
+        <tr>
+            <th>Gyártó</th>
+            <th>Név</th>
+            <th>Fogyasztás</th>
+            <th>Szín</th><th>Elérhető darabszám</th>
+            <th>Lóerő</th>
+            <th>Gyártási év</th>
+        </tr>
+        </thead>
+    </table>
+
+</div>
+</html>

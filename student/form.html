@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="js/addCar.js"> </script>
+<div class="bekezdes">
+    <form id="form">
+    <table>
+        <tr>
+            <td>Név:</td>
+            <td><input type="text" required="required" name="name" value=""></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fogyasztás:</td>
+            <td> <input type="text" required="required" name="consumption" value="l/100km"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Szín:</td>
+            <td><input type="text" required="required" name="color" value=""></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Gyártó:</td>
+            <td><select id="manSelect" required="required" name="manufacturer" value="" onfocus="ManSelect"></select></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Elérhető darabszám:</td>
+            <td><input type="number" required="required" name="available" value=""></td>
+            <td>db</td>
+        </tr>
+        <tr>
+            <td>Gyártási év:</td>
+            <td><input type="date" required="required" name="year" value=""></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Lóerő:</td>
+            <td><input type="number" required="required" name="horsepower" value=""></td>
+            <td>le</td>
+        </tr>
+        <tr>
+            <td colspan="3"> <input type="submit" name="insert" value="Add Car" ></td>
+        </tr>
+    </table>
+    </form>
+
+</div>
+
+
+
+</html>

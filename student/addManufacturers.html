@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="js/addmanufacturers.js"> </script>
+
+
+<div class="bekezdes">
+    <form id="addman">
+        <table>
+
+            <tr>
+                <td>Gyártó neve:</td>
+                <td>
+                    <input name="name" type="text" required="required"  value="">
+                </td>
+            </tr>
+            <tr>
+                <td>Gyártó nemzetisége:</td>
+                <td>
+                    <input name="country" type="text" value="">
+                </td>
+            </tr>
+            <tr>
+                <td>Alapítás dátuma:</td>
+                <td>
+                    <input name="founded" type="date">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="insert" value="Gyártó hozzáadása">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div class="bekezdes">
+    <table id="manTable">
+        <thead>
+        <th colspan="3">Gyártók</th>
+        </thead>
+    </table>
+</div>
+
+</html>
